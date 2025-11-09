@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "527646708759",
+    "project_id": "lineup-react",
+    "storage_bucket": "lineup-react.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:527646708759:android:a06fa6af54f0d96483b852",
+        "android_client_info": {
+          "package_name": "com.example.lineup_vo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "527646708759-f5rglt1fp5mn7pd09431odjeuc4c3b4k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsfZz9hX_Z9ywHM78XP1IU2IpCYUa8Vlc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "527646708759-f5rglt1fp5mn7pd09431odjeuc4c3b4k.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "527646708759-22fr1flnfnaevma55rst7s6ldh4jlbd8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.lineupVo"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

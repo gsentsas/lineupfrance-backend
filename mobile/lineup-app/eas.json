@@ -1,0 +1,81 @@
+{
+  "cli": {
+    "version": ">= 13.0.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "distribution": "internal",
+      "channel": "development",
+      "autoIncrement": true,
+      "android": {
+        "buildType": "apk"
+      },
+      "ios": {
+        "simulator": true
+      },
+      "env": {
+        "EXPO_PUBLIC_API_BASE_URL": "http://127.0.0.1:8000",
+        "EXPO_PUBLIC_SANCTUM_TOKEN": "dev-token",
+        "EXPO_PUBLIC_PUSH_ENV": "development"
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "channel": "preview",
+      "autoIncrement": true,
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        "EXPO_PUBLIC_API_BASE_URL": "https://staging.lineup.app",
+        "EXPO_PUBLIC_SANCTUM_TOKEN": "preview-token",
+        "EXPO_PUBLIC_PUSH_ENV": "preview"
+      }
+    },
+    "production": {
+      "distribution": "store",
+      "channel": "production",
+      "autoIncrement": true,
+      "ios": {
+        "simulator": false
+      },
+      "env": {
+        "EXPO_PUBLIC_API_BASE_URL": "https://api.lineup.app",
+        "EXPO_PUBLIC_SANCTUM_TOKEN": "prod-token",
+        "EXPO_PUBLIC_PUSH_ENV": "production",
+        "EAS_BUILD_ANSWER_IS_APP_ENCRYPTION_EXPORT_COMPLIANT": "YES"
+      }
+    },
+    "productionAndroid": {
+      "extends": "production",
+      "credentialsSource": "local",
+      "android": {
+        "buildType": "app-bundle"
+      }
+    },
+    "androidApk": {
+      "extends": "production",
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      }
+    }
+  },
+  "submit": {
+    "production": {
+      "android": {
+        "serviceAccountKeyPath": "./credentials/google-play-service-account.json",
+        "track": "internal"
+      },
+      "ios": {
+        "appleId": "aboudrayan@gmail.com",
+        "ascAppId": "1234567890",
+        "appleTeamId": "AHW98JBGUR",
+        "companyName": "LineUp",
+        "sku": "lineup-mobile-app",
+        "appName": "LineUp"
+      }
+    }
+  }
+}

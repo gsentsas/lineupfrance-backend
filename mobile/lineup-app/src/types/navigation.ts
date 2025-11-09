@@ -1,0 +1,20 @@
+export type RootStackParamList = {
+  Landing: undefined;
+  RoleChoice: undefined;
+  Auth: undefined;
+  ClientHome: undefined;
+  ClientMissions: undefined;
+  ClientWallet: undefined;
+  Notifications: undefined;
+  LinerHome: undefined;
+  LinerMissions: undefined;
+  LinerWallet: undefined;
+  LinerTutorial: undefined;
+  LinerKyc: undefined;
+  MissionDetail: { missionId: string; role: 'client' | 'liner'; title?: string };
+  OpsDashboard: undefined;
+  OpsMissions: undefined;
+  OpsNotifications: undefined;
+  OpsLiveMap: undefined;
+  OpsAnnouncements: undefined;
+};
